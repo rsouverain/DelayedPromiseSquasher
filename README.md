@@ -11,10 +11,27 @@ Typical use case is an input text making ajax queries onkeyup.
 ## Dependencies
  - none
 
+## Install
+
+```bash
+npm install --save delayed-promise-squasher
+```
+
+## Usage
+```javascript
+const DelayedPromiseSquasher = require('delayed-promise-squasher')
+const squasherInstance = new DelayedPromiseSquasher()
+
+squasherInstance.push(() => {
+    // ...
+})
+```
+
 ## Example:
 
 
 ```javascript
+const delayMs = 300
 const callbackFn1 = function () {
     console.warn('callbackFn1 just ran')
 }
@@ -29,7 +46,7 @@ const callbackFn4 = function () {
     console.warn('callbackFn4 just ran')
 }
 
-const delayMs = 300
+const DelayedPromiseSquasher = require('delayed-promise-squasher')
 const squasher = new DelayedPromiseSquasher(delayMs)
 const started = (new Date()).getTime()
 
