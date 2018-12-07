@@ -1,6 +1,6 @@
 # DelayedPromiseSquasher
 
-An instanciable class that will resolve your last pushed callback after a small delay without new push
+An ES6 instanciable class that will resolve your last pushed callback after a small delay without new push
 
 
 The push method returns a Promise
@@ -8,6 +8,8 @@ The push method returns a Promise
 
 Typical use case is an input text making ajax queries onkeyup.
 
+## Dependencies
+ - none
 
 ## Example:
 
