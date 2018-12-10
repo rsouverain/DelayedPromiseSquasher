@@ -1,6 +1,6 @@
 {
   "name": "delayed-promise-squasher",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "An instanciable class that will resolve your last pushed callback after a small delay without new push",
   "main": "index.js",
   "scripts": {
